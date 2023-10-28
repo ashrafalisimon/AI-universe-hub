@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universe Hub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="text-center py-12">
+        <h1 class="text-3xl font-medium py-4">AI Universe Hub</h1>
+        <button class="bg-red-500 px-4 py-2 rounded text-white text-md hover:bg-red-700 ">Sort By Date</button>
+    </header>
+    <main class="w-11/12 mx-auto">
+        <section id="items" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
+             </div>
+
+             
+        </section>
+        <div class="text-center my-6">
+            <button id="see-all-item" class="bg-red-500 px-4 py-2 rounded text-white text-md hover:bg-red-700 ">See All <i class="fa-solid fa-arrow-right"></i> </button>
+        </div>
+
+        <!-- modal -->
+       <section class="grid  justify-items-center">
+        <div id="modal" class=" fixed p-8 top-32  bg-white rounded-lg shadow-xl hidden">
+            <div>
+                <button id="close-btn" class="bg-red-500 rounded-full w-10 h-10 text-white -right-4 absolute -top-4 shadow-xl"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+             <div class="flex justify-between gap-8">
+                <div class="w-96 p-4 border border-red-400 bg-red-100 rounded-xl">
+                    <h3 id="description" class="text-xl font-bold mt-2 text-center">ChatGPT is an AI-powered chatbot platform that uses OpenAI's GPT technology to simulate human conversation.</h3>
+                    <div class="flex justify-betteen gap-2 text-center my-2">
+                        <p class="p-4 rounded-lg bg-white text-green-500"><span id="price1">$10</span> <span id="plan1">Basic</span></p>
+                        <p class="p-4 rounded-lg bg-white text-orange-500"><span id="price2">$50</span> <span id="plan2">Pro</span></p>
+                        <p class="p-4 rounded-lg bg-white text-red-500"><span id="price3">Contact us</span> <span id="plan3">Enterprise</span></p>
+                    </div>
+                    <div class="flex justify-between">
+                        <div>
+                            <h3 class="text-md font-bold mt-2">Features</h3>
+                            <ul class="list-disc ps-6 text-sm">
+                                <li id="features1">Customizable responses</li>
+                                <li id="features2">Multilingual support</li>
+                                <li id="features3">Seamless integration</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-md font-bold mt-2">Integrations</h3>
+                            <ul class="list-disc ps-6 text-sm">
+                                <li id="integration1">FB Messenger</li>
+                                <li id="integration2">Slack</li>
+                                <li id="integration3">Telegram</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-96 p-4 border border-slate-200 rounded-xl">
+                    <img id="details-img" src="Rectangle 23.png" alt="">
+                    <h3 id="hedaing" class="text-xl font-bold mt-2 text-center">Hi, how are you doing today?</h3>
+                    <p id="para" class="text-md py-2 text-center">I'm doing well, thank you for asking. How can I assist you today?</p>
+                </div>
+             </div>
+        </div>
+       </section>
+    </main>
+
+
+    <!-- js link -->
+    <script src="app.js"></script>
+</body>
+</html>
